@@ -10,10 +10,27 @@ const HistoryCardProd: React.FC<iChallenge> = ({ name, image_url, description, p
 ) => {
     const [valorPros, setValorProd] = useState('')
     const [priceSelect, setPriceSelect] = useState<number>(250);
-    
-    const clickRemoverItens = () => {
-        localStorage.removeItem("");
 
+
+    const clickRemoverItens = () => {
+        var getLocalStorage = JSON.parse(localStorage.getItem('produtos') || '[]');
+
+        const index = getLocalStorage.findIndex((product) => product.id === id);
+        console.log(index)
+        if (index > -1) {
+            getLocalStorage.splice(index, 1);
+        }
+        localStorage.setItem('produtos', JSON.stringify(getLocalStorage))
+
+
+
+        // for (var i = 0; i < getLocalStorage.length; i++) {
+        //     var Val = getLocalStorage[i]
+
+        //     var newStorage = getLocalStorage.filter(function (r) { return r != id });
+        //     localStorage.setItem('produtos', JSON.stringify(newStorage)); //Assign it back to LocalStorage.
+
+        // }
     }
 
     const quantie = useMemo(() => {
@@ -57,7 +74,7 @@ const HistoryCardProd: React.FC<iChallenge> = ({ name, image_url, description, p
                     </div>
                 </div>
             </div >
-            
+
         </Container>
     );
 }
