@@ -17,7 +17,9 @@ import {
 
 
 type ProdInfo = Array<iChallenge>
+
 const MyCar: React.FC = () => {
+
     const navigate = useNavigate();
     const [prods, setProds] = useState<ProdInfo>([])
     const [somaProd, setSomaProd] = useState<number>()
@@ -27,8 +29,7 @@ const MyCar: React.FC = () => {
     const getProd = () => {
         const get: string | null = localStorage.getItem('produtos');
         setProds(JSON.parse(get));
-    }
-    
+    }   
 
     useEffect(() => {
 
@@ -81,8 +82,8 @@ const MyCar: React.FC = () => {
                 </Row>
 
                 <ListProdsCar>
-                    {quantProd == '' ?
-                        <h1>SEM ITENS NO CARRINHO</h1>
+                    {quantProd == '0' ?
+                        <div className="divInfo">SEM ITENS NO CARRINHO</div>
                         :
                         prods && prods.map((item, index) => (
                             <div>

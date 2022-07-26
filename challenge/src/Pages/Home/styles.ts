@@ -36,22 +36,12 @@ export const Filters = styled.div`
         }
     }
 
-    .tag-filter-actived::after {
+    .tag-actived::after {
         content: '';
         display: block;
         width: auto;
         margin: 0 auto;
-        border-bottom: 10px solid green;    
-    }
- 
-    .tag-actived::after{
-       opacity: 1;
-       content: '';
-        display: block;
-        width: auto;
-        margin: 0 auto;
-        border-bottom: 10px solid green; 
-        
+        border-bottom: 2px solid #FFB05C;    
     }
 `;
 

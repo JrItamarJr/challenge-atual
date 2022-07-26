@@ -14,12 +14,13 @@ const InfoProd: React.FC = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        
+
         Api.get(`/products/${params.id}`).then((response) => setProds(response.data))
             .catch((err) => {
                 console.error("ops! ocorreu um erro" + err);
             });
     }, [params])
+
 
 
     function saveProdLocal() {

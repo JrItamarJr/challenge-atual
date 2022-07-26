@@ -9,6 +9,7 @@ export const Container = styled.div`
 export const ContainerImage = styled.div`
 justify-content: space-between;
 display: flex;
+
     .photo{
     background-size: cover; 
     height: 95%;
@@ -28,37 +29,38 @@ width: calc(100% - 50%);
     justify-items: start;
 
 
-  &__infocategory {
-      margin-bottom: 15px;
-  }
-  &__infofrete {
-      margin-bottom: 50px;
-      font-size: 12px;
-  }
+    &__infocategory {
+        margin-bottom: 15px;
+    }
 
-&__infotitle{
-    margin-bottom: 15px;
-    font-size: 40px;
-}
+    &__infofrete {
+        margin-bottom: 50px;
+        font-size: 12px;
+    }
 
-&__infoprice{
-    color: black;
-    margin-bottom: 30px;
+    &__infotitle{
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
 
-}
+    &__infoprice{
+        color: black;
+        margin-bottom: 30px;
 
+    }
 
-&__infoDesc{
-    font-size: 20px;
-    margin-bottom: 12px;
-    
-}
-&__info{
-    font-size: 17px;
-    margin-bottom: px;
-    height: 245px;
+    &__infoDesc{
+        font-size: 20px;
+        margin-bottom: 12px;
+        
+    }
 
-}
+    &__info{
+        font-size: 17px;
+        margin-bottom: px;
+        height: 245px;
+
+    }
 
 
     &__listPages{
@@ -77,7 +79,7 @@ width: calc(100% - 50%);
         margin-left: 15px;
         color: white;
     }
-    }
+}
 
 `;
 
@@ -97,6 +99,6 @@ export const Row = styled.div`
         &__span{
             margin-left: 5px;
 
-}
+        }
     }
 `;

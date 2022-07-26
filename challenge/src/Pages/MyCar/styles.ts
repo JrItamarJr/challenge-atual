@@ -125,15 +125,27 @@ export const ContainerProds = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% - 35%);
+
+    .divInfo{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        height: 15rem;
+        width: 100%;
+        
+    }
 `;
 
 export const MenuItemLink = styled.a`
 
     color: gray;
     text-decoration: none;
-font-size: 15px;
-margin: 5px;
-display: flex;
+    font-size: 15px;
+    margin: 5px;
+    display: flex;
     align-items: center;
 
     transition: opacity .3s;

@@ -69,24 +69,24 @@ const Home: React.FC = () => {
                     <button
                         type="button"
                         className={`
-                    tag-filter 
-                    tag-filter-recurrent`}
+                            tag-filter 
+                            ${busca.includes('') && 'tag-actived'}`}
                         onClick={() => { setBusca('') }}>
                         TODOS OS PRODUTOS
                     </button>
                     <button
                         type="button"
                         className={`
-                    tag-filter 
-                    tag-filter-recurrent`}
+                            tag-filter 
+                            ${busca.includes('t-shirts') && 'tag-actived'}`}
                         onClick={() => { setBusca('t-shirts') }}>
                         CAMISETAS
                     </button>
                     <button
                         type="button"
                         className={`
-                    tag-filter 
-                    tag-filter-recurrent`}
+                            tag-filter 
+                            ${busca.includes('mugs') && 'tag-actived'}`}
                         onClick={() => { setBusca('mugs') }}>
                         CANECAS
                     </button>
