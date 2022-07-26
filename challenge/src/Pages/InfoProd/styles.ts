@@ -20,7 +20,6 @@ display: flex;
 export const ContainerProd = styled.div`
 flex-direction: column;
 justify-content: space-between;
-font-family: 'Century Gothic';
 width: calc(100% - 50%);
 
 .cardInfoProd {

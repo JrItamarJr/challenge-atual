@@ -11,12 +11,10 @@ export const Container = styled.div`
 export const Row = styled.div`
     .carrinho{
         font-size: 25px;
-        color: #5D5D6D;
         margin-top: 15px;
     }
     .totalCarrinho{
         font-size: 13px;
-        color: #5D5D6D;
         margin-top: 5px;
         &__text{
             
@@ -25,7 +23,6 @@ export const Row = styled.div`
 
     .return{
         border-radius: 5px;
-        font-family:'Century Gothic', sans-serif;
         cursor: pointer;
         color: gray;
         width: 100px;

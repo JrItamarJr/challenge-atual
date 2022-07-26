@@ -29,7 +29,6 @@ $clr-gray700: #161d34;
 }
 
 body {
-  font-family: 'Century Gothic', sans-serif;
   margin: 2rem;
 }
 

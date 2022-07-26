@@ -57,7 +57,6 @@ display: flex;
     
     &__inputText{
         color: #5D5D6D;
-        /* font-family: 'Roboto'; */
         font-size: 12px;
         width: 100%;
         height: 100%;
