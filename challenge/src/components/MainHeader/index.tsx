@@ -26,7 +26,6 @@ const MainHeader: React.FC = () => {
     useEffect(() => {
 
         getProd()
-        localStorage.setItem('busca', busca)
         try {
 
             const contar = prods.filter(function (item) {

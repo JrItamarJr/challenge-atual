@@ -25,8 +25,6 @@ const InfoProd: React.FC = () => {
 
     function saveProdLocal() {
 
-        localStorage.setItem(prods.name, prods.id.toString());
-
         var produtos = JSON.parse(localStorage.getItem('produtos') || "[]")
         var produto = {
             name: prods.name,

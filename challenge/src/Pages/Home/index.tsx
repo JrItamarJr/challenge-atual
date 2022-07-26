@@ -20,7 +20,6 @@ const Home: React.FC = () => {
 
     const { tasks, getAll } = useChallenge();
     const [busca, setBusca] = useState('')
-    const buscaProd = localStorage.getItem('busca')
     const prodSearch = tasks.filter((prods) => prods.category.includes(busca.toLowerCase()))
 
     const [itensPerPage, setItensPerPage] = useState(12)

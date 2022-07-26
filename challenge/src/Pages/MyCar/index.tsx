@@ -54,7 +54,6 @@ const MyCar: React.FC = () => {
             setQuantProd(contar.toString());
             setSomaProd(soma);
 
-            // localStorage.setItem('total', somaProd);
         } catch {
 
         }
