@@ -1,2 +1,0 @@
-# challenge-atual
-Teste pratico
